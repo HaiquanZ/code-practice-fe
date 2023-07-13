@@ -28,3 +28,23 @@
     color: var(--text-color);
     font-weight: bold;
 }
+
+.newtask-item{
+    border: 1px var(--primary-color) solid;
+    border-radius: 20px;
+    text-align: center;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+.newtask-item:hover{
+    background-color: var(--primary-color);
+}
+.newtask-item h3{
+    margin: 1rem auto;
+}
+
+.topuser-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+}

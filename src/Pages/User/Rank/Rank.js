@@ -6,7 +6,7 @@ function Rank(){
         <div className="container rank">
             <h1>Top Ranking User</h1>
 
-            <table class="table table-striped table-primary">
+            <table className="table table-striped table-primary">
                 <thead>
                     <tr>
                         <th>Numerical</th>

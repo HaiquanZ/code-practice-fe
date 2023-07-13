@@ -24,6 +24,7 @@
     border-radius: 10px;
     font-size: 1.5rem;
     background-color: #1E293B;
+    color: var(--text-color)
 }
 .form-signin button{
     font-size: 1.5rem;

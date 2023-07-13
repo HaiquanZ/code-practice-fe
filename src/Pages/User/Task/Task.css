@@ -1,5 +1,6 @@
 .task{
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .task h1{
     color: var(--text-color);

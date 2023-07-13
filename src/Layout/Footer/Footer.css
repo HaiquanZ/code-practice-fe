@@ -1,0 +1,18 @@
+.footer{
+    border-top: 1px solid #232943;
+}
+.footer-content{
+    color: #64748B;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+.contact a i{
+    color: #64748B;
+    font-size: 3rem;
+    margin: auto 1.5rem;
+}
+.contact a i:hover{
+    color: var(--primary-color);
+}

@@ -1,8 +1,12 @@
 import React from "react";
 import styles from './Header.module.css';
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Header(){
+
+    const user = useSelector((state) => state.auth.login.currentUser);
+    var path = user ? '/profile' : '/sign';
 
     return(
         <div className={styles['big-header']}>
@@ -17,7 +21,7 @@ function Header(){
                         <Link to="/rank" style={{textDecoration: 'none'}}><li>Rank</li></Link>
                         <Link to="/about" style={{textDecoration: 'none'}}><li>About</li></Link>
                     </ul>
-                    <Link to="/sign" style={{textDecoration: 'none'}}><i className="fa-solid fa-user"></i></Link>
+                    <Link to={path} style={{textDecoration: 'none'}}><i className="fa-solid fa-user"></i></Link>
                 </div>
             </div>
 

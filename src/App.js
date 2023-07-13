@@ -7,6 +7,7 @@ import Rank from './Pages/User/Rank/Rank';
 import About from './Pages/User/About/About';
 import Sign from './Pages/User/Sign/Sign';
 import SingleTask from './Pages/User/SingleTask/SingleTask';
+import Profile from './Pages/User/Profile/Profile';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
       {path:'/rank', element: <Rank/>},
       {path:'/about', element: <About/>},
       {path:'/sign', element: <Sign/>},
-      {path:'/detail', element: <SingleTask/>}
+      {path:'/detail', element: <SingleTask/>},
+      {path: '/profile', element: <Profile/>}
     ]
   },
   {

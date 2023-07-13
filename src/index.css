@@ -23,4 +23,5 @@ html {
 body{
   text-decoration: none !important;
   background-color: #0F172A !important;
+  color: var(--text-color) !important;
 }
