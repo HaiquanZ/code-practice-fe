@@ -1,0 +1,11 @@
+.rank h1{
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+table{
+    font-size: 1.75rem;
+}

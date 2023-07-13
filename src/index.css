@@ -4,20 +4,23 @@
   box-sizing: inherit;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
-body {
-  margin: 0;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 
 :root {
-  --main-color: #1b4388;
-  --white-color: #ffffff;
-  --black-color: #000000;
+  --primary-color: #38BDF8;
+  --second-color: #6E7BAF;
+  --theme-color: #0F172A;
+  --text-color: #E1E2E4;
 }
+
+@import '~mdb-ui-kit/css/mdb.min.css';
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+body{
+  text-decoration: none !important;
+  background-color: #0F172A !important;
 }

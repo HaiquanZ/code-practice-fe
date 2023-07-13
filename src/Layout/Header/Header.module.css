@@ -1,0 +1,113 @@
+.big-header{
+    border-bottom: 1px solid #232943;
+}
+.header{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-header h1{
+    color: var(--primary-color);
+    font-family: 'Shadows Into Light', cursive;
+}
+.logo-header {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.nav-header{
+    display: flex;
+}
+.nav-header ul{
+    display: flex;
+}
+.nav-header li {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.75rem;
+    font-weight: 100;
+    list-style: none;
+    margin: auto 1rem;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+.nav-header i{
+    font-size: 2rem;
+    color: #64748B;
+    margin-left: 3rem;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    margin-top: .25rem;
+}
+.nav-header li:hover, .nav-header i:hover{
+    color: var(--primary-color);
+}
+/* header mobile */
+.header-mobile {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.header-mobile .list-icon{
+    font-size: 2.5rem;
+    color: #64748B;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.list-icon:hover{
+    color: var(--primary-color);
+}
+
+/* menu mobile */
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .7;
+    display: none;
+}
+.menu-mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    padding-top: 3rem;
+    text-align: center;
+    transform: translateX(100%);
+}
+.menu-mobile-item{
+    font-size: 1.75rem;
+    margin: 1rem auto;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+.menu-mobile-item:hover{
+    color: var(--primary-color);
+}
+
+.menu-mobile-item i{
+    margin-right: 1rem;
+}
+
+@media (max-width:1023px) {
+    .header-mobile{
+        display: flex;
+    }
+    .header{
+        display: none;
+    }
+    .logo-header{
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+}

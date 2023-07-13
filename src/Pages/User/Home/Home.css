@@ -1,0 +1,30 @@
+.banner img{
+    width: 100%;
+}
+.banner-text{
+    padding-top: 20rem;
+}
+.banner-text h1{
+    font-size: 5rem;
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: center;
+}
+.banner-text button{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 50px;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+.banner-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.task-user h1{
+    color: var(--text-color);
+    font-weight: bold;
+}
