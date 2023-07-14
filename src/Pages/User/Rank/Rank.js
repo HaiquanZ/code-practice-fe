@@ -36,7 +36,11 @@ function Rank(){
                                 <td>{index+1}</td>
                                 <td>{user.name}</td>
                                 <td>{user.trophy}</td>
-                                <td>Gold</td>
+                                <td>
+                                    {
+                                        users.trophy >= 50 ? 'Diamond' : (user.trophy >= 40 ? 'Gold' : (user.trophy >= 30 ? 'Silver' : (user.trophy >= 10 ? 'Bronze' : 'Vô danh')))
+                                    }
+                                </td>
                             </tr>
                         ))
                     }

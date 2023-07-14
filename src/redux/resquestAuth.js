@@ -16,9 +16,8 @@ export const loginUser = async (user, dispatch, navigate) => {
     const res = await axios.post("http://localhost:8000/api/users/login", user);
     //console.log(res);
     dispatch(loginSuccess(res.data));
-    // if (res.data.role_id === 1) navigate("/admin");
-    // else navigate("/");
-    navigate("/");
+    if (res.data.role_id === 1) navigate("/admin");
+    else navigate("/");
   } catch (err) {
     dispatch(loginFailed());
     //console.log(err.response.data.message);

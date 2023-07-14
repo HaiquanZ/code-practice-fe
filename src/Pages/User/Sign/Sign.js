@@ -24,23 +24,33 @@ function Sign(){
     const navigate = useNavigate('');
 
     function handleLogin(){
-        const userData = {
-            email,
-            password
+
+        //if email or password is empty
+        if (email === '' || password === '') alert('Please enter email and password');
+        else{
+            const userData = {
+                email,
+                password
+            }
+            //console.log(userData)
+            loginUser(userData, dispatch, navigate);
         }
-        //console.log(userData)
-        loginUser(userData, dispatch, navigate);
     }
 
     function handleRegister(){
-        const userData = {
-            name,
-            email,
-            password
+        //if email or password or name is empty
+        if (email === '' || password === '' || name === '') alert('Please enter email, name and password');
+        else{
+            const userData = {
+                name,
+                email,
+                password
+            }
+    
+            registerUser(userData, dispatch, navigate);
+            showSignIn();
         }
-
-        registerUser(userData, dispatch, navigate);
-        showSignIn();
+        
     }
 
     return(

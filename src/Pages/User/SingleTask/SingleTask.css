@@ -29,3 +29,39 @@
     padding-right: 1.5rem;
     margin: 1.5rem;
 }
+
+.comment-item{
+    background-color: #1E293B;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.comment-item h3{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.input-comment{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.input-comment input{
+    padding-left: 1.5rem;
+    width: 70%;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: #1E293B;
+    color: var(--text-color)
+}
+.input-comment button{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
