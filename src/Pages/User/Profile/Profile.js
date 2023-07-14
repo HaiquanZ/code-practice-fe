@@ -19,7 +19,7 @@ function Profile(){
             <div className="container d-flex justify-content-center">
                 <div className="profile-content">
                     <h1>Information of Account</h1>
-                    <table class="table table-primary table-striped">
+                    <table className="table table-primary table-striped">
                         <thead>
                             <tr>
                                 <th>Thông tin</th>

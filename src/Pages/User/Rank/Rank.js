@@ -1,27 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Rank.css';
+import axios from "axios";
 
 function Rank(){
+
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:8000/api/users')
+        .then(function (response) {
+            setUsers(response.data.users);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    },[]);
+
     return(
         <div className="container rank">
             <h1>Top Ranking User</h1>
 
-            <table className="table table-striped table-primary">
+            <table className="table table-striped table-primary table-rank">
                 <thead>
                     <tr>
                         <th>Numerical</th>
                         <th>Name</th>
-                        <th>Email</th>
+                        <th>Trophy</th>
                         <th>Rank</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
-                        <td>Gold</td>
-                    </tr>
+                    {
+                        users.map((user, index) => (
+                            <tr key={index}>
+                                <td>{index+1}</td>
+                                <td>{user.name}</td>
+                                <td>{user.trophy}</td>
+                                <td>Gold</td>
+                            </tr>
+                        ))
+                    }
                 </tbody>
             </table>
         </div>

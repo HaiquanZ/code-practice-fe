@@ -23,6 +23,9 @@
     display: flex;
     justify-content: center;
 }
+.task-user{
+    margin-bottom: 2rem;
+}
 
 .task-user h1{
     color: var(--text-color);

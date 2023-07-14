@@ -1,31 +1,31 @@
 import React, { useEffect, useState } from "react";
 import './Home.css';
-import { getAllTasks } from "../../../redux/requestTask";
-import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 
 function Home(){
 
-    const dispatch = useDispatch();
+    const [newTask, setNewTask] = useState([]);
     const [topUser, setTopUser] = useState([]);
 
     useEffect(() => {
-        getAllTasks(dispatch);
+
+        axios.get('http://localhost:8000/api/tasks')
+        .then(function (response) {
+            setNewTask(response.data.tasks.slice(0,3));
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 
         axios.get('http://localhost:8000/api/users')
         .then(function (response) {
-            setTopUser(response.data.users.slice(0,3));
+            setTopUser(response.data.users.slice(0,4));
         })
         .catch(function (error) {
             console.log(error);
         });
     },[])
 
-    
-    const tasks = useSelector((state) => state.task.getAllTasks.tasks);
-    console.log(tasks);
-
-    const newTask = tasks.tasks.slice(0,3);
 
     return(
         <div className="container home">

@@ -1,3 +1,6 @@
+.rank{
+    margin-bottom: 5rem;
+}
 .rank h1{
     color: var(--text-color);
     font-weight: bold;
@@ -6,6 +9,12 @@
     margin-bottom: 2rem;
 }
 
-table{
+.table-rank thead th{
+    font-weight: bold;
     font-size: 1.75rem;
+    text-align: center;
+}
+.table-rank tbody td{
+    font-size: 1.75rem;
+    text-align: center;
 }
