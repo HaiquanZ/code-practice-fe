@@ -7,6 +7,10 @@ function Home(){
     const [newTask, setNewTask] = useState([]);
     const [topUser, setTopUser] = useState([]);
 
+    function handleClickTask(id){
+        window.location.href = `http://localhost:3000/detail?id=${id}`;
+    }
+
     useEffect(() => {
 
         axios.get('http://localhost:8000/api/tasks')
@@ -44,7 +48,7 @@ function Home(){
                     <h1>New Task</h1>
                     {
                         newTask.map((task) => (
-                            <div key={task.id} className="newtask-item">
+                            <div key={task.id} className="newtask-item" onClick={() => handleClickTask(task.id)}>
                                 <h3>{task.name}</h3>
                             </div>
                         ))
