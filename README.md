@@ -1,6 +1,6 @@
 # CodePractice Website - FrontEnd
 ## 1. Tên dự án
-CodePractice Website là một dự án tạo ra một website luyện tập lập trình ngôn ngữ Python
+CodePractice Website là một dự án tạo ra một website luyện tập lập trình ngôn ngữ Python  
 Link repo BackEnd: https://github.com/HaiquanZ/code-practice-BE
 ## 2. Chức năng
 Trang web cung cấp các chức năng
