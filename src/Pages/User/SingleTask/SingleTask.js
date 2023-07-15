@@ -65,6 +65,7 @@ function SingleTask(){
         else{
             axios.post(`http://localhost:8000/compiler/${idTask}`, {code: code})
             .then(res => {
+                if (res.data.mark === 0) setResult('Result is not correct or your program have error!');
                 setMark(res.data.mark);
             })
             .catch(err => console.log(err));

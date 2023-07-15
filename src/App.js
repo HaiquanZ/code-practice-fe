@@ -8,6 +8,9 @@ import About from './Pages/User/About/About';
 import Sign from './Pages/User/Sign/Sign';
 import SingleTask from './Pages/User/SingleTask/SingleTask';
 import Profile from './Pages/User/Profile/Profile';
+import ManageTask from './Pages/Admin/ManageTask/ManageTask';
+import ManageUser from './Pages/Admin/ManageUser/ManageUser';
+import ManageCommnet from './Pages/Admin/ManageComment/ManageComment';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +28,12 @@ const router = createBrowserRouter([
   },
   {
     path: '/admin',
-    element: <Admin/>
+    element: <Admin/>,
+    children:[
+      {path: '/admin', element: <ManageTask/>},
+      {path: '/admin/user', element: <ManageUser/>},
+      {path: '/admin/comment', element: <ManageCommnet/>}
+    ]
   }
 ])
 
